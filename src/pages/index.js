@@ -4,8 +4,9 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'gatsby';
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
+import pic1 from '../assets/images/coffee.jpg';
+import pic2 from '../assets/images/weights.jpg';
+import pic3 from '../assets/images/hikt.jpg';
 import Scroll from '../components/Scroll';
 import Gallery from '../components/Gallery';
 
@@ -60,72 +61,90 @@ const IndexPage = () => (
 
     <section id="banner">
       <header>
-        <h2>This is Overflow</h2>
+        <h2>About</h2>
       </header>
-      <p>
-        A brand new site template designed by{' '}
-        <a href="http://twitter.com/ajlkn">AJ</a> for{' '}
-        <a href="http://html5up.net">HTML5 UP</a>.<br />
-        It’s responsive, built on HTML5/CSS3, and entirely free
-        <br />
-        under the{' '}
-        <a href="http://html5up.net/license">Creative Commons license</a>.
-      </p>
+      <div className="container">
+        <h4>
+          Versatile and highly motivated self-starter, Full stack web developer with a passion for creating real-world solutions always seeking ways to enhance current skill sets as well as learning new ones daily.
+      </h4>
+      </div>
       <footer>
         <Scroll type="id" element="first">
           <a href="#first" className="button style2 scrolly">
-            Act on this message
+            See Projects
           </a>
         </Scroll>
       </footer>
     </section>
 
+    <article className="container box style2">
+      <header>
+        <h2>Projects</h2>
+      </header>
+    </article>
+
     <article id="first" className="container box style1 right">
-      <a href="/#" className="image fit">
+      <a href="https://koffee-shop.netlify.com/" className="image fit">
         <img src={pic1} alt="" />
       </a>
       <div className="inner">
         <header>
           <h2>
-            Lorem ipsum
-            <br />
-            dolor sit amet
+            Koffee
           </h2>
         </header>
         <p>
-          Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia
-          pellentesque eleifend vitae est elit tristique velit tempus etiam.
+          Online ordering platform for a local coffee shop. Includes dynamic shopping cart built using React Redux.
         </p>
+        <a href="https://github.com/Beaulieu527/koffee" className="button style2 ">
+          Github
+          </a>
       </div>
     </article>
 
     <article className="container box style1 left">
-      <a href="/#" className="image fit">
+      <a href="https://love-every-pound.netlify.com/" className="image fit">
         <img src={pic2} alt="" />
       </a>
       <div className="inner">
         <header>
           <h2>
-            Mollis posuere
+            Love Every Pound
             <br />
-            lectus lacus
+
           </h2>
         </header>
         <p>
-          Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper.
-          Etiam egestas scelerisque ac duis magna lorem ipsum dolor.
+          A weight tracker app with inspirational quotes to keep you motivated every day. Shows a graph and a calendar of your past weights.
         </p>
+        <a href="https://github.com/kyoung90/Love-Every-Pound" className="button style2 ">
+          Github
+          </a>
+      </div>
+    </article>
+
+    <article id="first" className="container box style1 right">
+      <a href="https://agile-peak-09148.herokuapp.com/" className="image fit">
+        <img src={pic3} alt="" />
+      </a>
+      <div className="inner">
+        <header>
+          <h2>
+            Hikt
+          </h2>
+        </header>
+        <p>
+          Social media site that allows you to keep track of all your favorite hikes throughout the world in one place.
+        </p>
+        <a href="https://github.com/Beaulieu527/hikt_with_JS-" className="button style2 ">
+          Github
+        </a>
       </div>
     </article>
 
     <article className="container box style2">
       <header>
-        <h2>Magnis parturient</h2>
-        <p>
-          Justo phasellus et aenean dignissim
-          <br />
-          placerat cubilia purus lectus.
-        </p>
+        <h2>Technologies</h2>
       </header>
 
       <div className="inner gallery">
@@ -144,43 +163,6 @@ const IndexPage = () => (
           }))}
         />
       </div>
-    </article>
-
-    <article className="container box style3">
-      <header>
-        <h2>Nisl sed ultricies</h2>
-        <p>Diam dignissim lectus eu ornare volutpat orci.</p>
-      </header>
-      <form method="post" action="#">
-        <div className="row gtr-50">
-          <div className="col-6 col-12-mobile">
-            <input
-              type="text"
-              className="text"
-              name="name"
-              placeholder="Name"
-            />
-          </div>
-          <div className="col-6 col-12-mobile">
-            <input
-              type="text"
-              className="text"
-              name="email"
-              placeholder="Email"
-            />
-          </div>
-          <div className="col-12">
-            <textarea name="message" placeholder="Message" />
-          </div>
-          <div className="col-12">
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </form>
     </article>
 
     <article className="container box style3">

@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Overflow', // <title>
+  siteTitle: 'Portfolio', // <title>
   manifestName: 'Overflow',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -8,29 +8,24 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-overflow/`, // This path is subpath of your hosting https://domain/portfolio
-  authorName: 'Anubhav',
+  authorName: 'Justin Beaulieu',
   heading: 'Web Developer',
   // social
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/beaulieu527',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/justin-beaulieu/',
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:beaulieudev@gmail.com',
     },
   ],
 };
